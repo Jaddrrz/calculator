@@ -16,6 +16,10 @@ button {
     width: 18vw;
     height: 5vh;
     margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 6px;
 }
 
 .buttons {
