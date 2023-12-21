@@ -5,8 +5,8 @@ let division = 1
 let firstNumber 
 let secondNumber
 let operator
-let displayValue1 = 0;
-let displayValue2 = 0
+let displayValue1 = 0
+let displayValue2 = ""
 let result
 
 const display = document.querySelector(".display")
@@ -35,7 +35,6 @@ function operate(firstNumber, operator, secondNumber) {
     switch (operator) {
         case "+":
             add(firstNumber, secondNumber)
-            console.log("adding")
             break
         case "-":
             subtract(firstNumber, secondNumber)
@@ -114,6 +113,7 @@ plus.addEventListener("click", () => {
     firstNumber = parseInt(displayValue1)
     display.textContent = 0
     btn1.addEventListener("click", () => {
+        console.log(displayValue2)
         displayValue2 += "1"
         display.textContent = displayValue2
     })
@@ -174,10 +174,203 @@ plus.addEventListener("click", () => {
     return operator = "+"
 })
 
+const minus = document.querySelector("#minus")
+minus.addEventListener("click", () => {
+    firstNumber = parseInt(displayValue1)
+    display.textContent = 0
+    btn1.addEventListener("click", () => {
+        displayValue2 += "1"
+        display.textContent = displayValue2
+    })
+
+    const btn2 = document.querySelector("#btn2")
+    btn2.addEventListener("click", () => {
+        displayValue2 += "2"
+        display.textContent = displayValue2
+    })
+
+    const btn3 = document.querySelector("#btn3")
+    btn3.addEventListener("click", () => {
+        displayValue2 += "3"
+        display.textContent = displayValue2
+    })
+
+    const btn4 = document.querySelector("#btn4")
+    btn4.addEventListener("click", () => {
+        displayValue2 += "4"
+        display.textContent = displayValue2
+    })
+
+    const btn5 = document.querySelector("#btn5")
+    btn5.addEventListener("click", () => {
+        displayValue2 += "5"
+        display.textContent = displayValue2
+    })
+
+    const btn6 = document.querySelector("#btn6")
+    btn6.addEventListener("click", () => {
+        displayValue2 += "6"
+        display.textContent = displayValue2
+    })
+
+    const btn7 = document.querySelector("#btn7")
+    btn7.addEventListener("click", () => {
+        displayValue2 += "7"
+        display.textContent = displayValue2
+    })
+
+    const btn8 = document.querySelector("#btn8")
+    btn8.addEventListener("click", () => {
+        displayValue2 += "8"
+        display.textContent = displayValue2
+    })
+
+    const btn9 = document.querySelector("#btn9")
+    btn9.addEventListener("click", () => {
+        displayValue2 += "9"
+        display.textContent = displayValue2
+    })
+
+    const btn0 = document.querySelector("#btn0")
+    btn0.addEventListener("click", () => {
+        displayValue2 += "0"
+        display.textContent = displayValue2
+    })
+    return operator = "-"
+})
+
+const times = document.querySelector("#times")
+times.addEventListener("click", () => {
+    firstNumber = parseInt(displayValue1)
+    display.textContent = 0
+    btn1.addEventListener("click", () => {
+        displayValue2 += "1"
+        display.textContent = displayValue2
+    })
+
+    const btn2 = document.querySelector("#btn2")
+    btn2.addEventListener("click", () => {
+        displayValue2 += "2"
+        display.textContent = displayValue2
+    })
+
+    const btn3 = document.querySelector("#btn3")
+    btn3.addEventListener("click", () => {
+        displayValue2 += "3"
+        display.textContent = displayValue2
+    })
+
+    const btn4 = document.querySelector("#btn4")
+    btn4.addEventListener("click", () => {
+        displayValue2 += "4"
+        display.textContent = displayValue2
+    })
+
+    const btn5 = document.querySelector("#btn5")
+    btn5.addEventListener("click", () => {
+        displayValue2 += "5"
+        display.textContent = displayValue2
+    })
+
+    const btn6 = document.querySelector("#btn6")
+    btn6.addEventListener("click", () => {
+        displayValue2 += "6"
+        display.textContent = displayValue2
+    })
+
+    const btn7 = document.querySelector("#btn7")
+    btn7.addEventListener("click", () => {
+        displayValue2 += "7"
+        display.textContent = displayValue2
+    })
+
+    const btn8 = document.querySelector("#btn8")
+    btn8.addEventListener("click", () => {
+        displayValue2 += "8"
+        display.textContent = displayValue2
+    })
+
+    const btn9 = document.querySelector("#btn9")
+    btn9.addEventListener("click", () => {
+        displayValue2 += "9"
+        display.textContent = displayValue2
+    })
+
+    const btn0 = document.querySelector("#btn0")
+    btn0.addEventListener("click", () => {
+        displayValue2 += "0"
+        display.textContent = displayValue2
+    })
+    return operator = "x"
+})
+
+const divided = document.querySelector("#divided")
+divided.addEventListener("click", () => {
+    firstNumber = parseInt(displayValue1)
+    display.textContent = 0
+    btn1.addEventListener("click", () => {
+        displayValue2 += "1"
+        display.textContent = displayValue2
+    })
+
+    const btn2 = document.querySelector("#btn2")
+    btn2.addEventListener("click", () => {
+        displayValue2 += "2"
+        display.textContent = displayValue2
+    })
+
+    const btn3 = document.querySelector("#btn3")
+    btn3.addEventListener("click", () => {
+        displayValue2 += "3"
+        display.textContent = displayValue2
+    })
+
+    const btn4 = document.querySelector("#btn4")
+    btn4.addEventListener("click", () => {
+        displayValue2 += "4"
+        display.textContent = displayValue2
+    })
+
+    const btn5 = document.querySelector("#btn5")
+    btn5.addEventListener("click", () => {
+        displayValue2 += "5"
+        display.textContent = displayValue2
+    })
+
+    const btn6 = document.querySelector("#btn6")
+    btn6.addEventListener("click", () => {
+        displayValue2 += "6"
+        display.textContent = displayValue2
+    })
+
+    const btn7 = document.querySelector("#btn7")
+    btn7.addEventListener("click", () => {
+        displayValue2 += "7"
+        display.textContent = displayValue2
+    })
+
+    const btn8 = document.querySelector("#btn8")
+    btn8.addEventListener("click", () => {
+        displayValue2 += "8"
+        display.textContent = displayValue2
+    })
+
+    const btn9 = document.querySelector("#btn9")
+    btn9.addEventListener("click", () => {
+        displayValue2 += "9"
+        display.textContent = displayValue2
+    })
+
+    const btn0 = document.querySelector("#btn0")
+    btn0.addEventListener("click", () => {
+        displayValue2 += "0"
+        display.textContent = displayValue2
+    })
+    return operator = ":"
+})
 
 const equals = document.querySelector("#equals")
 equals.addEventListener("click", () => {
-    
     secondNumber = parseInt(displayValue2)
     console.log(operator)
     console.log(firstNumber)
@@ -186,5 +379,13 @@ equals.addEventListener("click", () => {
     display.textContent = result
 })
 
-// operate(2, "+", 5)
-// console.log(result)
+const clear = document.querySelector(".clear")
+clear.addEventListener("click", () => {
+    display.textContent = 0
+    console.log(displayValue1)
+    console.log(displayValue2)
+    displayValue1 = ""
+    displayValue2 = ""
+    console.log(displayValue1)
+    console.log(displayValue2)
+})
